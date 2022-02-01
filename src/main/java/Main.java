@@ -78,10 +78,7 @@ public class Main {
 
     private static List<Employee> jsonToList(String json) {
         Gson gson = new Gson();
-        // Преобразование файла JSON в объект Java
-        List<Employee> staff = gson.fromJson(json, new TypeToken<List<Employee>>() {
-        }.getType());
-        // печать сотрудников
+        List<Employee> staff = gson.fromJson(json, new TypeToken<List<Employee>>() {}.getType());
         System.out.println(staff);
         return staff;
     }
